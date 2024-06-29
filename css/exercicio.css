@@ -1,0 +1,11 @@
+.primeira-parte{
+    color: red;
+    text-transform: uppercase;
+    font-weight: 50px;
+}
+.segunda-parte{
+    color: blue;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    text-transform: lowercase;
+}
