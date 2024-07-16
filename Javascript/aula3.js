@@ -19,12 +19,9 @@ var arr = ["1", "2", "3","4", "5"]
 // console.log(arr.shift());
 // console.log(arr);
 
-//array sort - ordena os numeros do menor para o maior e tambem em orde alfabetica
+//array sort - ordena os numeros do menor para o maior e tambem em orde alfabetica (ordenador)
 // arr.sort();
 // console.log(arr);
 
-//array fill - substitui os elementos por outro elemento que eu quero
+//array fill - substitui os elementos por outro elemento que eu quero (preenche a partir de uma certa posição)
 // console.log(arr.fill('A',2));
-
-const found = arr.find((e) => e <= 3);
-console.log(found);
