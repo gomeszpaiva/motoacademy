@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', ()=> {
     const formulario = document.getElementById("form")
-    const resultado = document,getElementById("result")
+    const resultado = document.getElementById("result")
 
     formulario.addEventListener('submit', (event)=> {
         event.preventDefault();
