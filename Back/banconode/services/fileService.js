@@ -18,6 +18,20 @@ console.log(filePath);
     return { filename: file.originalname, path: filePath };
 }
 
-module.exports = {
-    uploadImage
+async function getImage(id){
+    const connection = await mysql.createConnection(config);
+    const [results] = await connection.execute('SELECT * FROM `images` WHERE `id` = ?', [id])
+
+    if(results.length >  0){
+        const image = results[0]
+        const fileContent = await fs.readFile(image.path);
+        return {content: fileContent, filename: image.filename}
+    }
 }
+
+
+
+module.exports = {
+    uploadImage,
+    getImage
+};
